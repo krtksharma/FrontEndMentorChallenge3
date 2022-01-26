@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap%27');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+main{
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+width: 1000px;
+height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius:8px ;
+}
+
+.card1{
+    background-color: hsl(244, 38%, 16%);
+    height: 350px;
+    width: 50%;     
+    border-radius:10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.card2{
+    background: hsl(277, 64%, 61%);
+    height: 350px;
+    width: 50%;
+    border-radius: 0px 10px 10px 0px;
+
+}
+.card2 img{
+    height: 100%;
+    width: 100%;
+    /* opacity: 0.58; */
+    mix-blend-mode: multiply;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+.carrdd1{
+    height: 320px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.t1{
+    padding:0 5%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.violet{
+    color: hsl(277, 64%, 61%);
+}
+.p1{
+    color: hsla(0, 0%, 100%, 0.6);
+    width: 360px;
+    margin-right: 40px;
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    align-items: flex-start;
+
+}
+.st{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    margin-right: 60px;    
+}
+.st h3{
+    color:hsla(0, 0%, 100%, 1) ;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.st p{
+    margin-top: 5px;
+    color:hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media(max-width:1050px){
+    main{
+        height: fit-content;
+        padding: 10vh 0px;
+    }
+    .card{
+        flex-wrap: wrap-reverse;
+        width: 50%;
+        height: fit-content;
+    }
+    .card1{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+    .carrdd1 h1{
+        font-size: 28px;
+    }
+    .p1{
+        margin: 0px auto;
+        width: 80%;
+        font-size: 14px;
+    }
+    .card2{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0  0;
+    }
+    .card2 img{
+        border-radius: 10px 10px 0 0;
+    }
+    .st{
+        margin: 0 auto;
+    }
+    .st h3{
+        font-size: 20px;
+    }
+    .st p{
+        font-size: 11px;
+    }
+
+}
+@media(max-width:670px){
+    .card{
+        
+        width: 80%;
+
+    }
+    .carrdd1{
+
+        height: 380px;
+        
+    }
+    .carrdd1 h1{
+        font-size: 24px;
+    }
+    .card1{
+        
+        height: 440px;
+        
+    }
+    .st{
+        margin: 0 auto;
+        width: 40%;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .st p{
+        font-size: 11px;
+    }
+
+}
+
